@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>
 		
+		hexo添加标签和分类 
+		
 		Hexo博客
 	</title>
 	<link rel="icon" type="image/png" href="https://hexo.io/icon/favicon-16x16.png" sizes="16x16">
@@ -44,41 +46,66 @@
 	
 </aside>
 <article class="col-sm-6">
-	<!-- false -->
+	
 
-
-
-
-
-<div class="my-4">
-
-
-
-
-
-
-<section>
-  <div>
-    <h2>
-    <a href="/archives/2019" class="archive-year">2019</a>
-  </h2>
-  </div>
-  <div>
+  <li class="media my-4 ">
     
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/generator/"> 生成器generator</a>
-      </li>
-    </ul>
+    <div class="media-body">
 
-    
-    
-  </div>
-</section>
 
+ 
+<h4 class="text-center ">      
+hexo添加标签和分类
+</h4>
+<p>
+	<span >发表时间</span>
+<span class="ml-2 badge badge-light">
+2019年11月10日 10点 
+</span>
+    <span class="ml-2">修改时间</span>
+<span class="ml-2 badge badge-light">
+2019年11月10日 10点 
+</span>
+</p>
+
+
+
+
+
+
+       
+
+<div class=" my-4  text-dark text-muted">
+
+
+
+<p>
+<div>
+<p><code>&lt;%= __(&#39;tags&#39;) %&gt;</code></p>
+<p><code>&lt;% if (item.tags &amp;&amp; item.tags.length){ %&gt;</code></p>
+<p> <code>&lt;%- list_tags(item.tags, {show_count: false,style: &#39;none&#39;,}) %&gt;</code></p>
+<p> <code>&lt;% } %&gt;</code></p>
+<p><code>&lt;%= __(&#39;categories&#39;) %&gt;</code></p>
+<p><code>&lt;% if (item.categories &amp;&amp; item.categories.length){ %&gt;</code></p>
+<p>  <code>&lt;%- list_categories(item.categories, {</code></p>
+<p>   <code>show_count: false,</code></p>
+<p>   <code>style: &#39;none&#39;,</code></p>
+<p>  <code>}) %&gt;</code></p>
+<p><code>&lt;% } %&gt;</code></p>
 
 
 </div>
+    
+<p>
+
+
+</div>
+
+  </div>
+  </li>
+
+  
+
 </article>
 <aside class="col-sm-4">
 
