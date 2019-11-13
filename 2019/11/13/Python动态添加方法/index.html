@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>
 		
+		Python动态添加方法 
+		
 		Hexo博客
 	</title>
 	<link rel="icon" type="image/png" href="https://hexo.io/icon/favicon-16x16.png" sizes="16x16">
@@ -44,68 +46,65 @@
 	
 </aside>
 <article class="col-sm-6">
-	<!-- false -->
+	
 
-
-
-
-
-<div class="my-4">
-
-
-
-
-
-
-<section>
-  <div>
-    <h2>
-    <a href="/archives/2019" class="archive-year">2019</a>
-  </h2>
-  </div>
-  <div>
+  <li class="media my-4 ">
     
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95/"> Python动态添加方法</a>
-      </li>
-    </ul>
-
-    
+    <div class="media-body">
 
 
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E5%B1%9E%E6%80%A7/"> Python动态添加属性</a>
-      </li>
-    </ul>
-
-    
-
-
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/%E9%97%AD%E5%8C%85/"> 闭包</a>
-      </li>
-    </ul>
-
-    
+ 
+<h4 class="text-center ">      
+Python动态添加方法
+</h4>
+<p>
+	<span >发表时间</span>
+<span class="ml-2 badge badge-light">
+2019年11月13日 14点 
+</span>
+    <span class="ml-2">修改时间</span>
+<span class="ml-2 badge badge-light">
+2019年11月13日 14点 
+</span>
+</p>
 
 
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/generator/"> 生成器generator</a>
-      </li>
-    </ul>
 
-    
-    
-  </div>
-</section>
 
+
+
+       
+
+<div class=" my-4  text-dark text-muted">
+
+
+
+<p>
+<div>
+<p>import types</p>
+<p>class A():<br>    def <strong>init</strong>(self, name, age):<br>        self.name = name<br>        self.age = age</p>
+<a id="more"></a>
+
+<p>def helo(self):<br>    print(‘动态添加方法’)</p>
+<p>a = A(‘kong’, 12)<br>b = A(‘mmm’, 23)<br>a.helo = types.MethodType(helo, a)<br>a.helo()</p>
+<p>@staticmethod<br>def static():<br>    print(‘添加静态方法’)</p>
+<p>A.static = static<br>A.static()<br>c = A(‘ddd’, 45)<br>c.static()</p>
+<p>@classmethod<br>def lex(cls):<br>    print(‘添加类方法’)</p>
+<p>A.lex = lex<br>A.lex()<br>d = A(‘dddddd’, 34)<br>d.lex()</p>
 
 
 </div>
+    
+<p>
+
+
+</div>
+
+  </div>
+  </li>
+
+  
+
 </article>
 <aside class="col-sm-4">
 

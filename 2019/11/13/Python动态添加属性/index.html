@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>
 		
+		Python动态添加属性 
+		
 		Hexo博客
 	</title>
 	<link rel="icon" type="image/png" href="https://hexo.io/icon/favicon-16x16.png" sizes="16x16">
@@ -44,68 +46,65 @@
 	
 </aside>
 <article class="col-sm-6">
-	<!-- false -->
+	
 
-
-
-
-
-<div class="my-4">
-
-
-
-
-
-
-<section>
-  <div>
-    <h2>
-    <a href="/archives/2019" class="archive-year">2019</a>
-  </h2>
-  </div>
-  <div>
+  <li class="media my-4 ">
     
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95/"> Python动态添加方法</a>
-      </li>
-    </ul>
-
-    
+    <div class="media-body">
 
 
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E5%B1%9E%E6%80%A7/"> Python动态添加属性</a>
-      </li>
-    </ul>
-
-    
-
-
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/%E9%97%AD%E5%8C%85/"> 闭包</a>
-      </li>
-    </ul>
-
-    
+ 
+<h4 class="text-center ">      
+Python动态添加属性
+</h4>
+<p>
+	<span >发表时间</span>
+<span class="ml-2 badge badge-light">
+2019年11月13日 14点 
+</span>
+    <span class="ml-2">修改时间</span>
+<span class="ml-2 badge badge-light">
+2019年11月13日 14点 
+</span>
+</p>
 
 
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/generator/"> 生成器generator</a>
-      </li>
-    </ul>
 
-    
-    
-  </div>
-</section>
 
+
+
+       
+
+<div class=" my-4  text-dark text-muted">
+
+
+
+<p>
+<div>
+<p>class Lei:<br>    def <strong>init</strong>(self):<br>        pass</p>
+<p>Lei.name = ‘kong’<br>a = Lei()<br>print(a.name)</p>
+<a id="more"></a>
+
+<p>添加对象属性</p>
+<p>对象名.属性名 = 值</p>
+<p>settattr(对象，属性，值)</p>
+<p>class A():<br>    def <strong>init</strong>(self, name, age):<br>        self.name = name<br>        self.age = age</p>
+<p>b = A(‘aaa’, 123)<br>print(b.name)<br>setattr(b, b.name, ‘kong’)</p>
+<p>print(b.name)<br>n = getattr(b, “aaa”)<br>print(n)`</p>
 
 
 </div>
+    
+<p>
+
+
+</div>
+
+  </div>
+  </li>
+
+  
+
 </article>
 <aside class="col-sm-4">
 
