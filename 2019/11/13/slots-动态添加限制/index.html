@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>
 		
+		__slots__动态添加限制 
+		
 		Hexo博客
 	</title>
 	<link rel="icon" type="image/png" href="https://hexo.io/icon/favicon-16x16.png" sizes="16x16">
@@ -44,77 +46,66 @@
 	
 </aside>
 <article class="col-sm-6">
-	<!-- true -->
+	
 
-
-
-
-
-<div class="my-4">
-
-
-
-
-
-
-<section>
-  <div>
-    <h2>
-    <a href="/archives/2019" class="archive-year">2019</a>
-  </h2>
-  </div>
-  <div>
+  <li class="media my-4 ">
     
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/slots-%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E9%99%90%E5%88%B6/"> __slots__动态添加限制</a>
-      </li>
-    </ul>
-
-    
+    <div class="media-body">
 
 
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95/"> Python动态添加方法</a>
-      </li>
-    </ul>
-
-    
-
-
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E5%B1%9E%E6%80%A7/"> Python动态添加属性</a>
-      </li>
-    </ul>
-
-    
+ 
+<h4 class="text-center ">      
+__slots__动态添加限制
+</h4>
+<p>
+	<span >发表时间</span>
+<span class="ml-2 badge badge-light">
+2019年11月13日 14点 
+</span>
+    <span class="ml-2">修改时间</span>
+<span class="ml-2 badge badge-light">
+2019年11月13日 14点 
+</span>
+</p>
 
 
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/%E9%97%AD%E5%8C%85/"> 闭包</a>
-      </li>
-    </ul>
-
-    
 
 
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="/2019/11/13/generator/"> 生成器generator</a>
-      </li>
-    </ul>
 
-    
-    
-  </div>
-</section>
 
+       
+
+<div class=" my-4  text-dark text-muted">
+
+
+
+<p>
+<div>
+<p><em>slots_</em></p>
+<p>只对类对象限制，不对类限制。</p>
+<p>不仅限制类对象的属性还限制方法。</p>
+<p>仅对当前类有效，继承的子类不生效。</p>
+<p><code>class Aj:</code></p>
+<p>​        <code>__slots__ = (&#39;name&#39;, &#39;age&#39;)</code></p>
+<p>​        <code>def __init__(self, name, age):</code></p>
+<p>​                        <code>self.name = name</code> </p>
+<p>​                        <code>self.age = age</code></p>
+<p>​        <code>def helo(self):</code> </p>
+<p>​                        <code>print(&#39;ddddd&#39;)</code></p>
 
 
 </div>
+    
+<p>
+
+
+</div>
+
+  </div>
+  </li>
+
+  
+
 </article>
 <aside class="col-sm-4">
 

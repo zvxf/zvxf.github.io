@@ -124,6 +124,81 @@ config --list</code></em></strong>
 
  
 <h4 class="mt-0 mb-1">    
+<a class="active nav-link" href="/2019/11/13/slots-%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E9%99%90%E5%88%B6/">__slots__动态添加限制</a>
+</h4>
+<div class="text-right mr-5">
+<span class="mr-2">
+作者
+</span>
+<span class="mr-5">
+Kong
+</span>
+<span>
+2019年11月13日 
+</span>
+</div>
+
+
+
+
+
+
+ 
+
+
+
+ <p>
+ <!-- <span> 可能忘记了<!-- more --> </span> -->
+<p><em>slots_</em></p>
+<p>只对类对象限制，不对类限制。</p>
+<p>不仅限制类对象的属性还限制方法。</p>
+<p>仅对当前类有效，继承的子类不生效。</p>
+<p><code>class Aj:</code></p>
+<p>​        <code>__slots__ = (&#39;name&#39;, &#39;age&#39;)</code></p>
+<p>​        <code>def __init__(self, name, age):</code></p>
+<p>​                        <code>self.name = name</code> </p>
+<p>​                        <code>self.age = age</code></p>
+<p>​        <code>def helo(self):</code> </p>
+<p>​                        <code>print(&#39;ddddd&#39;)</code></p>
+
+</p>
+
+ <div class="text-right"> 
+  <a href="/2019/11/13/slots-%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E9%99%90%E5%88%B6/" class="btn btn-primary ">Go More</a>
+  </div>
+ <div>
+  <span>
+    分类
+
+    <a class="category-link" href="/categories/Python/">Python</a>
+
+    </span>
+    <span class="ml-4">
+    标签
+
+  <a class="tag-link" href="/tags/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E9%99%90%E5%88%B6/" rel="tag">Python动态添加限制</a>
+  
+  
+    </span>
+  </div>
+<hr/>
+
+
+
+
+  </div>
+  </li>
+
+  
+
+    
+  <li class="media my-4 ">
+    
+    <div class="media-body">
+
+
+ 
+<h4 class="mt-0 mb-1">    
 <a class="active nav-link" href="/2019/11/13/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95/">Python动态添加方法</a>
 </h4>
 <div class="text-right mr-5">
@@ -436,7 +511,7 @@ class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g =
  
     <h5 class="widget-title">标签</h5>
 
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0/" rel="tag">Python动态添加</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%88%90%E5%99%A8/" rel="tag">生成器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%AD%E5%8C%85/" rel="tag">闭包</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0/" rel="tag">Python动态添加</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E9%99%90%E5%88%B6/" rel="tag">Python动态添加限制</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%88%90%E5%99%A8/" rel="tag">生成器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%AD%E5%8C%85/" rel="tag">闭包</a></li></ul>
   
 
 
@@ -450,6 +525,14 @@ class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g =
         <li class="nav-item">
                 <a class="nav-link" href="/2020/11/10/git/">
         Git常用命令--我的第一篇博客
+</a>
+</li>
+</ul>
+        
+<ul class="nav flex-column">
+        <li class="nav-item">
+                <a class="nav-link" href="/2019/11/13/slots-%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E9%99%90%E5%88%B6/">
+        __slots__动态添加限制
 </a>
 </li>
 </ul>
@@ -474,14 +557,6 @@ class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g =
         <li class="nav-item">
                 <a class="nav-link" href="/2019/11/13/%E9%97%AD%E5%8C%85/">
         闭包
-</a>
-</li>
-</ul>
-        
-<ul class="nav flex-column">
-        <li class="nav-item">
-                <a class="nav-link" href="/2019/11/13/generator/">
-        生成器generator
 </a>
 </li>
 </ul>
